@@ -26,19 +26,35 @@ An interactive ASCII art generator that creates evolving patterns based on your 
 git clone https://github.com/abhishekrajpura/mood-ring-terminal.git
 cd mood-ring-terminal
 
-# Make the script executable
+# Make the scripts executable
 chmod +x mood_ring_terminal.py
+chmod +x mood_ring_simple.py
+chmod +x mood_ring_demo.py
+```
 
-# Run the application
+## Usage
+
+### Option 1: Full Interactive Version (Unix/Linux/macOS)
+```bash
 python3 mood_ring_terminal.py
+```
+
+### Option 2: Simplified Interactive Version (All Platforms)
+```bash
+python3 mood_ring_simple.py
+```
+
+### Option 3: Demo Mode (See the effects without typing)
+```bash
+python3 mood_ring_demo.py
 ```
 
 ## Requirements
 
 - Python 3.6+
 - Terminal with ANSI color support
-- Unix-like system (Linux/macOS) for best experience
-- Windows users: Works with limited functionality
+- Unix-like system (Linux/macOS) for best experience with the full version
+- Windows users: Use the simplified version for better compatibility
 
 ## How It Works
 
@@ -49,12 +65,11 @@ python3 mood_ring_terminal.py
 5. The patterns evolve and animate continuously
 6. Your mood can drift over time if you stop typing
 
-## Usage
+## Files in This Repository
 
-1. Run the script: `python3 mood_ring_terminal.py`
-2. Start typing anything that comes to mind
-3. Watch as the patterns and colors change based on your typing speed
-4. Type 'quit' and press Enter to exit
+- `mood_ring_terminal.py` - Full-featured version with real-time character input (Unix/Linux/macOS)
+- `mood_ring_simple.py` - Simplified version that works on all platforms
+- `mood_ring_demo.py` - Demo mode that automatically cycles through moods
 
 ## Technical Details
 
@@ -69,10 +84,18 @@ python3 mood_ring_terminal.py
 ### Linux/macOS
 - Full functionality with character-by-character input
 - Smooth real-time updates
+- Use `mood_ring_terminal.py` for the best experience
 
 ### Windows
 - Line-by-line input (press Enter after each line)
 - May require enabling ANSI support in terminal
+- Use `mood_ring_simple.py` for better compatibility
+
+## Troubleshooting
+
+- **Colors not showing?** Make sure your terminal supports ANSI colors
+- **Windows issues?** Try running in Windows Terminal or use the simplified version
+- **Permission denied?** Make the script executable with `chmod +x`
 
 ## Contributing
 

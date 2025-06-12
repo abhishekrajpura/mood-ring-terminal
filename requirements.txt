@@ -1,0 +1,15 @@
+# No external dependencies required!
+# This project uses only Python standard library modules:
+# - time
+# - random
+# - os
+# - sys
+# - threading
+# - collections (deque)
+# - datetime
+# - termios, tty (Unix/Linux/macOS only)
+
+# For future enhancements, you might want to add:
+# colorama==0.4.6  # For better Windows color support
+# blessed==1.20.0  # For advanced terminal capabilities
+# pynput==1.7.6    # For global keyboard input detection
